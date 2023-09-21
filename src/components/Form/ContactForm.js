@@ -47,20 +47,12 @@ export const ContactForm = ({ onAdd }) => {
           <StyledForm>
             <Label>
               Name
-              <Input
-                type="text"
-                name="name"
-                title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-              />
+              <Input type="text" name="name" />
               <ErrMessage name="name" component="div" />
             </Label>
             <Label>
               Number
-              <Input
-                type="tel"
-                name="number"
-                title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
-              />
+              <Input type="tel" name="number" />
               <ErrMessage name="number" component="div" />
             </Label>
             <Button type="submit" disabled={isSubmitting}>
